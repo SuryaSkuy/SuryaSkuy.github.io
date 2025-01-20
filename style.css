@@ -1,0 +1,383 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.wrapper{
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.nav-container {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+    display: flex; /* Menggunakan Flexbox untuk logo dan menu */
+    justify-content: space-between; /* Logo di kiri, menu di kanan */
+    align-items: center; /* Pusatkan elemen secara vertikal */
+    padding: 10px 0; /* Tambahkan padding jika diperlukan */
+}
+
+/* Gaya logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000957;
+    font-family: 'Courier', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.logo a:hover {
+    color: #ff5733;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    border-radius: 10%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 0 16px;
+}
+
+.menu ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+#home {
+    margin-top: 100px;
+}
+
+#home .home-container {
+    padding-top: 100px;
+    display: flex; /* Mengatur konten dalam satu baris */
+    align-items: center; /* Vertikal tengah */
+    gap: 30px; /* Jarak antara gambar dan teks */
+}
+
+#home img {
+    width: 100%; /* Sesuaikan lebar gambar */
+    max-width: 550px; /* Maksimal lebar gambar */
+    height: auto; /* Menjaga proporsi gambar */
+    border-radius: 10px; /* Opsional: Membuat sudut melengkung */
+}
+
+.justify {
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 16px;
+    color: #666666;
+    margin-top: 10px;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+#school img {
+    padding-top: 250px;
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #FFFFFF;
+    z-index: 1;
+    border-bottom:1px solid #000957;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-top: 100px;
+    margin: auto;
+    display: flex;
+    margin: 0px;
+}
+
+.kolom-home {
+    max-width: 500px;
+    padding: 10px;
+    text-align: left;
+}
+
+.kolom-home .deskripsi-home{
+    font-style: italic;
+        font-size: 18px;
+        color: #555;
+}
+
+.kolom{
+    margin: 50px;
+    margin-bottom: 100px;
+}
+
+.kolom .deskripsi {
+    padding-top: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #000957;
+}
+
+h2 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #000957;
+    width: 100%;
+    line-height: 50px;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.member-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Pusatkan semua kartu */
+    gap: 20px; /* Tambahkan jarak antar kartu */
+}
+
+.kartu-member {
+    text-align: center;
+    width: 20%;
+    margin: 20px auto;
+}
+
+.kartu-member img {
+    width: 80%;
+    border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+    display: block; /* Menghilangkan jarak putih bawaan */
+    margin: 0 auto; /* Pusatkan gambar */
+}
+
+.kartu-member p {
+    font-family: 'Comic Sans MS', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #000957;
+}
+
+.wali-kelas-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Pusatkan semua kartu */
+    gap: 20px; /* Tambahkan jarak antar kartu */
+    margin-top: -110px;
+}
+
+.kartu-wali-kelas {
+    text-align: center;
+    width: 20%;
+    margin: 20px auto;
+}
+
+.kartu-wali-kelas img {
+    width: 80%;
+    border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+    display: block; /* Menghilangkan jarak putih bawaan */
+    margin: 0 auto; /* Pusatkan gambar */
+}
+
+.kartu-wali-kelas p {
+    font-family: 'Comic Sans MS', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #000957;
+}
+
+#contact {
+    background: #b9b2b2;
+    padding: 20px 0px 20px 0px;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #000957;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+}
+
+a.tbl-biru {
+    background: #3f72af;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-biru:hover {
+    background: #fc5185;
+    text-decoration: none;
+}
+
+a.tbl-pink {
+    background: #fc5185;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-pink:hover {
+    background: #3f72af;
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+@media screen and (max-width: 991.98px){
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section{
+        display: block;
+    }
+
+    section img {
+        display: block;
+    }
+    
+    .kartu-member {
+        width: 50%;
+    }
+
+    .kartu-wali-kelas {
+        width: 50%;
+    }
+}
