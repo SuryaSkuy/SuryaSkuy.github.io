@@ -53,48 +53,22 @@
 
   <div id="dark-overlay"></div>
   <div id="info"></div>
-<h1 style="position: fixed; bottom: 10px; right: 10px; font-size: 18px; font-family: Arial, sans-serif; color: white; background: rgba(0, 0, 0, 0.4); padding: 6px 12px; border-radius: 8px; z-index: 9999;">
-  Create by Jafars
-</h1>
+  <h1 style="position: fixed; bottom: 10px; right: 10px; font-size: 18px; font-family: Arial, sans-serif; color: white; background: rgba(0, 0, 0, 0.4); padding: 6px 12px; border-radius: 8px; z-index: 9999;">
+    Create by Jafars
+  </h1>
+  
   <button id="musicButton">Mainkan Musik 🎵</button>
   <audio id="birthdaySong" src="lagu1.mp3" loop></audio>
-  <script>
-    let player;
-     const startTime = 227;
-    const endTime = 261;
-    window.onYouTubeIframeAPIReady = function() {
-      player = new YT.Player('player', {
-        height: '0',
-        width: '0',
-        videoId: 'd4OMqGKBl6E',
-        playerVars: {
-          autoplay: 0,
-          start: startTime,
-          end: endTime,
-          controls: 0,
-          loop: 1,
-          playlist: 'd4OMqGKBl6E'
-        },
-        events: {
-          onReady: () => {
-            const btn = document.getElementById('musicButton');
-            btn.disabled = false;
-            btn.innerText = "Mainkan Musik 🎵";
-          },
-          onStateChange: (event) => {
-            if (event.data === YT.PlayerState.ENDED) {
-              player.seekTo(90);
-            }
-          }
-        }
-      });
-    };
 
-    document.getElementById('musicButton').addEventListener('click', () => {
-      if (player) {
-        player.playVideo();
-        document.getElementById('musicButton').style.display = 'none';
-      }
+  <script>
+    const musicButton = document.getElementById('musicButton');
+    const audio = document.getElementById('birthdaySong');
+
+    musicButton.addEventListener('click', () => {
+      // Memutar audio dari elemen <audio>
+      audio.play();
+      // Menyembunyikan tombol setelah diklik
+      musicButton.style.display = 'none';
     });
   </script>
 
